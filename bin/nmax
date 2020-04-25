@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/nmax/processor'
+
+start = Time.now
+puts Nmax::Processor.call(STDIN, ARGV[0])
+puts "#{Time.now - start}"
